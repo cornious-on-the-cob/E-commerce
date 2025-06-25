@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -24,9 +25,34 @@
 
             <li><a class="nav__link nav__link-primary" href="#"> Books </a></li>
           </ul>
-        </div>
 
-        
+          <!--Burger Menu-->
+
+          <button class="button__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button
+              class="button__menu button__menu--close"
+              onclick="closeMenu()"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#landing" class="menu__link" onclick="closeMenu()>Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link">Books</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link no-cursor">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Burger Menu-->
+        </div>
       </nav>
       <header>
         <div class="header__container">
@@ -411,13 +437,11 @@
 
           <div class="footer__list">
             <a href="#landing" class="footer__link">Home</a>
-            <a href="" class="footer__link no-cursor">About  </a>
+            <a href="" class="footer__link no-cursor">About </a>
             <a href="#features" class="footer__link">Books</a>
             <a href="" class="footer__link no-cursor">Contact </a>
           </div>
-          <div class="footer__copyright">
-            Copyright &copy; Library
-          </div>
+          <div class="footer__copyright">Copyright &copy; Library</div>
         </div>
       </div>
     </footer>
