@@ -12,7 +12,7 @@ html {
 }
 
 .no-cursor {
-    cursor:  no-drop;
+  cursor: no-drop;
 }
 
 .row__column {
@@ -88,13 +88,11 @@ li {
   text-decoration: none;
 }
 
-
 /*
 
 Hamburger Menu
 
 */
-
 
 .button__menu {
   background-color: transparent;
@@ -121,8 +119,13 @@ Hamburger Menu
 }
 
 .menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 .menu__links {
@@ -149,8 +152,6 @@ Hamburger Menu
   padding: 8px;
   color: #fff;
 }
-
-
 
 /*
 
@@ -270,6 +271,7 @@ Highlights
 
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
@@ -277,7 +279,6 @@ Highlights
   width: calc(100% / 3);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -302,6 +303,7 @@ Highlights
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  align-items: center;
 }
 
 /* 
@@ -403,12 +405,37 @@ a:hover {
   text-decoration: none;
 }
 
+/*SMALL AND LARGE PHONES AND TABLETS*/
+
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .book {
+    width: 50%;
+  }
+}
+
+/* SMALL AND LARGE PHONES */
 
 @media (max-width: 550px) {
-    .nav__links {
-        display: none;
-    }
-    .button__menu {
-        display: block;
-    }
+  .nav__links {
+    display: none;
+  }
+  .button__menu {
+    display: block;
+  }
+  .highlight {
+    width: 100%;
+    margin-bottom: 24px;
+  }
 }
