@@ -439,3 +439,18 @@ a:hover {
     margin-bottom: 24px;
   }
 }
+
+
+/* 
+
+Books
+
+ */
+
+.books__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
