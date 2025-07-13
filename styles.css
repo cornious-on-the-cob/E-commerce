@@ -11,6 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .no-cursor {
   cursor: no-drop;
 }
@@ -153,11 +154,6 @@ Hamburger Menu
   color: #fff;
 }
 
-/*
-
-Hamburger Menu Done
-
-*/
 
 /*
 
@@ -234,6 +230,28 @@ button:active {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.books__loading--spinner {
+  display: none !important;
+}
+
+.books__loading .books__loading--spinner{
+  display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+  font-size: 60px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* 
@@ -319,12 +337,18 @@ Features
 
 .books {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .book {
   width: 25%;
   padding: 24px;
+}
+
+.books__loading {
+  height: 80vh;
 }
 
 .book__img {
